@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-row: inherit;
+    background-image: linear-gradient(rgba(160, 142, 142, 0.75), rgba(202, 18, 18, 0.75)),
+        url(furniture.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* START header */
+.header-element {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+
+}
+.logo{
+    font-family:'Brush Script MT', cursive;
+    font-size: 40px;
+    /* cursor: pointer; */
+    color: rgb(255, 255, 255);
+}
+.header-element ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+
+}
+.header-element ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform:uppercase ;
+}
+.header-element ul li::after{
+    content: "";
+    width:  0;
+    left: 0;
+    bottom: -10px;
+    height:3px;
+    background-color: rgb(198, 23, 23);
+    position: absolute;
+    transition: 1s;
+   
+}
+
+.header-element ul li:hover::after{
+  width: 100%;
+border-radius: 2px;
+
+}
+/* end header  */
+/*START main */
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-element{
+    /* border: 2px solid white; */
+    text-align: center;    
+   
+}
+.h3{
+    text-transform:uppercase ;
+font-size: 40px;
+color: aliceblue;
+}
+.text{
+    font-size: 16px;
+    color: aliceblue;
+    width: 400px;
+    top: 60px;
+    margin-top: 20px;
+    text-align: center;
+}
+.button{
+    margin-top: 20px;
+
+}
+button{
+    background-color: transparent;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    margin-left: 20px;
+    color: antiquewhite;
+    border: 2px solid white;
+}
+button:hover{
+    width: 130px;
+    height: 30px;
+   color: brown;
+   transition: 0.5s;
+
+    background-color: aliceblue;
+}
